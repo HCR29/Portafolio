@@ -18,7 +18,7 @@ $message .= "Enviado el: " . date('d/m/Y', time());
 $para = 'hebertchr95@gmail.com';
 $asunto = 'Mensaje de... (Escribe como quieres que se vea el remitente de tu correo)';
 
-mail($para, $asunto, utf8_decode($message), $header);
+mail($para, $asunto, ($message), $header);
 
 header("Location:index.html");
 ?>
