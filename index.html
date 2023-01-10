@@ -373,17 +373,17 @@
             <h2>CONTACTO</h2>
             <div class="fila">
                 <!-- Formulario -->
-                <div class="col">
-                    <input type="text" placeholder="Tú Nombre">
-                    <input type="text" placeholder="Número telefónico">
-                    <input type="text" placeholder="Dirección de correo">
+                <form action="enviar.php" class="col"  method="post" >
+                    <input type="text" name="name" id="name" class="name" placeholder="Nombre">
+                    <input type="text" name="phone" id="subject" class="subject" placeholder="Numero Telefonico">
+                    <input type="text" name="mail" id="mail" class="email" placeholder="Correo Electronico">
                     <input type="text" placeholder="Tema">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
-                    <button>
+                    <textarea name="message" class="message" placeholder="MENSAJE ... " id="message"></textarea>
+                    <button type="submit">
                         Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
                         <span class="overlay"></span>
                     </button>
-                </div>
+                </form>
                 <!-- Mapa -->
                 <div class="col">
                     <img src="img/ubicacion.png" alt="">
